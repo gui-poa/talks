@@ -1,0 +1,26 @@
+<!doctype html>
+<head>
+     <title>Non Waiting External CSS</title>
+<style>
+h1,h2,h3,h4,h5{color:#55407e;}
+</style>
+<link rel="stylesheet" type="text/css" href="http://www.slowmagazine.com.au/templates/gantry/css-compiled/master-b303c1e5744d1b4f618d61af7361442b.css" media="print">
+
+<script type="text/javascript">
+// Add load event listener.
+window.addEventListener("load", loadTime, false);
+function loadTime() {
+  // Get current time.
+  //var now = new Date().getTime();
+  // Calculate page load time.
+ // var page_load_time = now - performance.timing.navigationStart;
+  //if (window.console) console.log("User-perceived page loading time" + page_load_time);
+console.log("DOM Interativo:"+performance.timing.domInteractive)
+}
+</script>
+
+</head>
+<body>
+<h1>Nro randomico: <script>document.write(Math.floor((Math.random()*5000)+1))</script></h1>
+</body>
+</html>

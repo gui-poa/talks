@@ -1,0 +1,20 @@
+<!doctype html>
+<head>
+     <title>Non Waiting External CSS</title>
+<style>
+h1,h2,h3,h4,h5{color:#55407e;}
+</style>
+</head>
+<body>
+<h1>Nro randomico: <script>document.write(Math.floor((Math.random()*5000)+1))</script></h1>
+<script>
+var path   = "css";
+var style   = document.createElement( 'link' );
+style.rel   = 'stylesheet';
+style.type  = 'text/css';
+style.href  = "http://www.slowmagazine.com.au/templates/gantry/css-compiled/master-b303c1e5744d1b4f618d61af7361442b.css";
+document.getElementsByTagName( 'head' )[0].appendChild( style );
+</script>
+</body>
+</html>
+

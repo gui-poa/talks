@@ -3,18 +3,23 @@
      <title>Waiting External CSS</title>
      <link rel="stylesheet" type="text/css" href="http://www.clausura.com.br/waiting.css">
      <script>
-	var a = Math.floor((Math.random()*5000)+1)
+	function clearScreen()
+	{
+		document.body.innerHTML="";
+	}
      </script>
 </head>
 
 <body>
 <div id="teste">
-<script>document.write(a)</script>
+<span id="logo"></span>
 </div>
 
 <div id="teste2">
-Conteudo bloqueante
-<script>document.write(a)</script>
+BREAKING NEWS
+<p>Morre o ator Jose Wilker</p>
 </div>
+
+<input type="button" onclick="clearScreen()" value="Clear">
 </body>
 </html>

@@ -12,3 +12,13 @@ background-image:url('data:image/jpg;base64,data:image/jpeg;base64,/9j/4AAQSkZJR
 #teste {
 	height:45px; width:100%; float:left; z-index:100; background:#ff9900; background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff9900), color-stop(100%,#f47920)); background:-webkit-linear-gradient(top, #ff9900 0%,#f47920 100%); background:linear-gradient(to bottom, #ff9900 0%,#f47920 100%); background: -ms-linear-gradient(top, #ff9900 0%,#f47920 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff9900', endColorstr='#f47920',GradientType=0);
 }
+
+#logo
+{
+width: 171px; height: 36px; float: left;
+background-image:url('http://www.clausura.com.br/ico-terra-beta.png')
+}
+
+#teste2 {
+font-size: 18px; color: red;
+}

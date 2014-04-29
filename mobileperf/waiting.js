@@ -11766,9 +11766,10 @@ Pellentesque porta tincidunt ornare. Vivamus enim nunc, tempor viverra mauris se
 Pellentesque porta tincidunt ornare. Vivamus enim nunc, tempor viverra mauris sed, laoreet fermentum mauris. Aliquam sit amet felis mollis justo venenatis feugiat id at turpis. Ut placerat est gravida tellus lobortis tincidunt. In viverra mi sem, ac consequat metus consequat in. Nam ornare adipiscing lectus et ornare. Curabitur nisi quam, accumsan eget odio ac, mattis ultricies neque. Etiam eu odio vel arcu dignissim suscipit. Duis lacinia lacus dolor, sed convallis urna interdum in. Quisque dictum tellus pellentesque, convallis sed.
 
 s
-*/
+
 
 setTimeout(function(){console.log("espera de 3seg")},3000);
 
-
+*/
+alert("JS executado");
 

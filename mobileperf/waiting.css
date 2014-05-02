@@ -20,5 +20,9 @@ background-image:url('http://gui-poa.github.io/talks/mobileperf/ico-terra-beta.p
 }
 
 body #teste2 {
-font-size: 18px; color: red;
+font-size: 18px; color: red; float: left; margin-top:5px;
+}
+
+p{
+margin:5px 0 0 0; padding:0;
 }

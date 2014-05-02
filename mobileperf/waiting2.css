@@ -10,5 +10,5 @@ background-image:url('data:image/jpg;base64,data:image/jpeg;base64,/9j/4AAQSkZJR
 }
 
 body #teste2 {
-font-size: 18px; color: red;text-indent:0;
+font-size: 18px; color: red;text-indent:0;float:left;margin-top:5px
 }

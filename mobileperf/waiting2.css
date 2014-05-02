@@ -11,4 +11,5 @@ background-image:url('data:image/jpg;base64,data:image/jpeg;base64,/9j/4AAQSkZJR
 
 body #teste2 {font-size: 18px; color: red;text-indent:0;float:left;margin-top:5px}
 
-p{margin:5px 0 0 0; padding:0;}
+p {margin:5px 0 0 0; padding:0;}
+#botao {clear:both;padding-top:15px}

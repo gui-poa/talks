@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+     <title>Waiting External CSS</title>
+     <style>
+	#teste {
+        	height:45px; width:100%; float:left; z-index:100; background:#ff9900; background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff9900), color-stop(100%,#f47920)); background:-webkit-linear-gradient(top, #ff9900 0%,#f47920 100%); background:linear-gradient(to bottom, #ff9900 0%,#f47920 100%); background: -ms-linear-gradient(top, #ff9900 0%,#f47920 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff9900', endColorstr='#f47920',GradientType=0);
+	}
+     </style>
+     <script>
+     function clearScreen()
+        {
+                document.body.innerHTML="";
+        }
+     </script>
+</head>
+
+<body>
+<div id="teste">
+<span id="logo"></span>
+</div>
+
+<div id="teste2">
+<p>BREAKING NEWS</p>
+<p>Public Wi-Fi is mostly safe from Heartbleed</p>
+</div>
+
+<div id="botao">
+<input type="button" onclick="clearScreen()" value="Clear">
+</div>
+
+<script>
+var path   = "css";
+var style   = document.createElement( 'link' );
+style.rel   = 'stylesheet';
+style.type  = 'text/css';
+style.href  = "http://gui-poa.github.io/talks/mobileperf/middle/middle.css";
+document.getElementsByTagName( 'head' )[0].appendChild( style );
+</script>
+
+
+</body>
+</html>

@@ -11771,5 +11771,5 @@ s
 setTimeout(function(){console.log("espera de 3seg")},3000);
 
 */
-alert("JS executado");
+console.log("JS executed");
 

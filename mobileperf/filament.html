@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+     <title>Non Waiting External CSS</title>
+
+<script>
+function loadCSS(e,t,n){"use strict";var i=window.document.createElement("link");var o=t||window.document.getElementsByTagName("script")[0];i.rel="stylesheet";i.href=e;i.media="only x";o.parentNode.insertBefore(i,o);setTimeout(function(){i.media=n||"all"})}
+
+loadCSS("http://gui-poa.github.io/talks/mobileperf/waiting2.css");
+</script>
+
+<style>
+#teste {
+        height:45px; width:100%; float:left; z-index:100; background:#ff9900; background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff9900), color-stop(100%,#f47920)); background:-webkit-line
+ar-gradient(top, #ff9900 0%,#f47920 100%); background:linear-gradient(to bottom, #ff9900 0%,#f47920 100%); background: -ms-linear-gradient(top, #ff9900 0%,#f47920 100%); filter: progid:DXImageTransform.Microsoft
+.gradient(startColorstr='#ff9900', endColorstr='#f47920',GradientType=0);
+}
+
+#logo
+{
+width: 171px; height: 36px; float: left;
+background-image:url('data:image/jpeg;base64,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')
+}
+
+#teste2 {
+text-indent: -99999px
+}
+</style>
+
+<script>
+function clearScreen()
+{
+    document.body.innerHTML="";
+}
+</script>
+</head>
+
+<body>
+
+<div id="teste">
+<span id="logo"></span>
+</div>
+
+<div id="teste2">
+<p>BREAKING NEWS</p>
+<p>Public Wi-Fi is mostly safe from Heartbleed</p>
+</div>
+
+<div id="botao">
+<input type="button" onclick="clearScreen()" value="Clear">
+</div>
+
+
+</body>
+
+</html>

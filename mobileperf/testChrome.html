@@ -1,7 +1,9 @@
 <!doctype html>
 <html>
 <head>
+     <meta charset="utf-8" />
      <title>Non Waiting External CSS</title>
+     <link rel="stylesheet" type="text/css" href="http://gui-poa.github.io/talks/mobileperf/waiting2.css" media="none" onload="if(media!='all')media='all'">
 	<style>
 	#teste {
         	height:45px; width:100%; float:left; z-index:100; background:#ff9900; background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff9900), color-stop(100%,#f47920)); background:-webkit-linear-gradient(top, #ff9900 0%,#f47920 100%); background:linear-gradient(to bottom, #ff9900 0%,#f47920 100%); background: -ms-linear-gradient(top, #ff9900 0%,#f47920 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff9900', endColorstr='#f47920',GradientType=0);
@@ -43,6 +45,4 @@ function clearScreen()
 
 </body>
 
-</body>
 </html>
-<link rel="stylesheet" type="text/css" href="http://gui-poa.github.io/talks/mobileperf/waiting2.css">

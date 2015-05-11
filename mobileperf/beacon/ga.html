@@ -1,14 +1,27 @@
 <!doctype html>
 <html>
 <head>
-     <title>DNS</title>
-     <link rel="dns-prefetch" href="//www.rsjs.org">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<title>Tracking Event</title>
+    
+     <!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-56407043-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<link href="beacon.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
 
 <div>
-DNS Prefetch
+<a href="http://www.google.com" onclick="ga('send', 'event', 'outbound', 'click');">Link to exit</a>
 </div>
 
 </body>

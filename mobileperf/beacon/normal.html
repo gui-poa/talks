@@ -1,7 +1,9 @@
 <!doctype html>
 <html>
 <head>
-     <title>Tracking Event</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<title>Tracking Event</title>
     
      <!-- Google Analytics -->
 	<script>
@@ -12,14 +14,27 @@
 
 		ga('create', 'UA-56407043-1', 'auto');
 		ga('send', 'pageview');
-	</script>
 
+		/**
+		* Função que acompanha um clique em um link externo no Google Analytics.
+		* Essa função processa uma string de URL válida como um argumento e usa essa string de URL
+		* como o rótulo do evento.
+		*/
+		var trackOutboundLink = function(url) {
+		   ga('send', 'event', 'outbound', 'click', url, {'hitCallback':
+		     function () {
+		     document.location = url;
+		     }
+		   });
+		}
+	</script>
+	<link href="beacon.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
 
 <div>
-<a href="http://www.terra.com.br">Botao de ação</a>
+<a href="http://www.google.com" onclick="trackOutboundLink('http://www.google.com'); return false;">Link to exit</a>
 </div>
 
 </body>

@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Setting Cookie to template=backend</title>
+<script type="text/javascript">
+
+function writeCookie(key, value, days, domain) {
+    var date = new Date();
+
+    // Default at 365 days.
+    days = days || 365;
+
+    // Get unix milliseconds at current time plus number of days
+    date.setTime(+ date + (days * 86400000)); //24 * 60 * 60 * 1000
+
+    window.document.cookie = key + "=" + value + "; expires=" + date.toGMTString() + "; path=/; domain="+domain;
+
+    return value;
+};
+
+</script>
+
+<body>
+<a href="javascript:void(0);" onclick="writeCookie('cmsparams','template=backend',10,'terra.com.br');">Nova Capa Brasil</a>
+
+<a href="javascript:void(0);" onclick="writeCookie('cmsparams"\,'',-1,'terra.com.br')">Capa Atual</a>
+</body>
+

@@ -4,13 +4,17 @@ function netinfo()
 
 	var init = function() {
 
-		writesNetInfo();
+		writesNetInfo(false);
 
-		navigator.connection.addEventListener('change', writesNetInfo);
+		navigator.connection.addEventListener('change', function () { writesNetInfo(true) });
 	}
 
-	function writesNetInfo()
+	function writesNetInfo(vibrate)
 	{
+		if (vibrate) {
+			window.navigator.vibrate(200);
+		}
+		
 		var connection = navigator.connection;
 
 		var text="";
